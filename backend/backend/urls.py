@@ -17,12 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from backend.views import health_check
+from backend.views import health_check, trigger_error
+
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('health/', health_check, name='health_check'),
+      path('error/', trigger_error, name='trigger_error'),
     path('api/', include("blogs.urls")),
     path('api/', include("users.urls")),
 ]
