@@ -11,7 +11,7 @@ packaging==25.0
 psycopg2-binary==2.9.11
 PyJWT==2.10.1
 sqlparse==0.5.5
-whitenoise==6.11.0i
+whitenoise==6.11.0
 sentry-sdk==2.49.0
 urllib3==2.6.3
 
